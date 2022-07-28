@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttomnavbar"
+    android:label="Home"
+    app:startDestination="@id/home_fragment">
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.oyo_app.home_fragment"
+        android:label="fragment_home_fragment"
+        tools:layout="@layout/fragment_home_fragment" />
+    <fragment
+        android:id="@+id/bookings_Fragment"
+        android:name="com.example.oyo_app.bookings_Fragment"
+        android:label="fragment_bookings_"
+        tools:layout="@layout/fragment_bookings_" />
+    <fragment
+        android:id="@+id/offer_Fragment"
+        android:name="com.example.oyo_app.offer_Fragment"
+        android:label="fragment_offer_"
+        tools:layout="@layout/fragment_offer_" />
+    <fragment
+        android:id="@+id/invite_Fragment"
+        android:name="com.example.oyo_app.invite_Fragment"
+        android:label="fragment_invite_"
+        tools:layout="@layout/fragment_invite_" />
+    <fragment
+        android:id="@+id/help_Fragment"
+        android:name="com.example.oyo_app.help_Fragment"
+        android:label="fragment_help_"
+        tools:layout="@layout/fragment_help_" />
+</navigation>

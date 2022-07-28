@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/review_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="username"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/userreviewrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+
+        android:progressBackgroundTint="#3A3434"
+        android:background="@color/bg"
+        android:progressTint="#F30606"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/review_username"
+        app:layout_constraintTop_toBottomOf="@+id/review_username" />
+
+    <TextView
+        android:id="@+id/reviewdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="23 May 2022"
+        android:textColor="#494444"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userreviewrating"
+        app:layout_constraintStart_toEndOf="@+id/userreviewrating"
+        app:layout_constraintTop_toTopOf="@+id/userreviewrating" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Verified Stay"
+        android:textColor="#494444"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/reviewdate"
+        app:layout_constraintStart_toEndOf="@+id/reviewdate"
+        app:layout_constraintTop_toTopOf="@+id/reviewdate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/userreviewrating"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userreviewrating"
+        app:layout_constraintTop_toBottomOf="@+id/userreviewrating">
+
+        <ImageView
+            android:id="@+id/reviewimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="awsm exprirence"
+        android:textColor="#494444"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Reviewed on "
+        android:textColor="#504949"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cm"
+        app:layout_constraintTop_toBottomOf="@+id/cm"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView99"
+        app:layout_constraintStart_toEndOf="@+id/textView99"
+        app:layout_constraintTop_toTopOf="@+id/textView99"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/oyoimage" />
+</androidx.constraintlayout.widget.ConstraintLayout>
